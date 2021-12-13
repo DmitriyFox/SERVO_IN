@@ -1,0 +1,19 @@
+.install {
+  margin-top: 140px;
+  padding-bottom: 100px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    max-width: 656px;
+    margin-left: 40px;
+  }
+  &__title {
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+}

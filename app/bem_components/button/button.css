@@ -1,0 +1,49 @@
+/* This is the project stylesheet */
+
+:root {
+  /* Colors */
+  --light-grey: rgba(224, 224, 224, 1);
+  --servo-base-color-button-color: rgba(0, 114, 218, 1);
+  --teal: rgba(0, 80, 152, 1);
+
+  /* Typographies */
+  /* category-item */
+  --category-item-family: "Exo 2";
+  --category-item-size: 26px;
+  --category-item-weight: 700;
+  --category-item-line-height: 31px;
+
+  /* category-item-sub-text */
+  --category-item-sub-text-family: "Exo 2";
+  --category-item-sub-text-size: 22px;
+  --category-item-sub-text-weight: 700;
+  --category-item-sub-text-line-height: 22px;
+}
+
+.button-base-two {
+  padding: 0.5px 0;
+  display: flex;
+  align-items: center;
+}
+.button-base {
+  background: linear-gradient(
+    180deg,
+    var(--servo-base-color-button-color) 0%,
+    var(--teal) 100%
+  );
+  border-radius: 26px;
+  padding: 8px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-text {
+  font-family: "Exo 2";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.48px;
+}

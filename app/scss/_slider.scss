@@ -1,0 +1,33 @@
+.slider {
+  text-align: center;
+  &__inner {
+    // border: 1px solid;
+    padding: 40px 0px;
+  }
+  &__box {
+  }
+  &__box-item {
+  }
+  &__description {
+      font-family: $font;
+      
+    //   font-size: 24px;
+    //   line-height: 30px;
+  }
+  &__box-img {
+    margin: 0 auto;
+    border-radius: $border-radius;
+  }
+}
+.slider__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  &-left {
+    left: 200px;
+  }
+  &-right {
+      right: 200px;
+  }
+}

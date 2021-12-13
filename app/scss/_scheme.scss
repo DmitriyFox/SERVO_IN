@@ -1,0 +1,99 @@
+.scheme {
+  margin: 20px 0;
+  // padding: 135px 0 0;
+
+  &__inner {
+    // background-size: 100% 100%;
+    // background-position: center;
+    background-image: url("../images/scheme-bg.svg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // position: relative;
+  }
+
+  &__img {
+    // width: 80.85%;
+    // height: 59.62%;
+  }
+
+  &__bg-shadow {
+    height: 33.86%;
+    align-self: stretch;
+    margin-bottom: 20.08px;
+    object-fit: cover;
+  }
+  &__content {
+    max-width: 900px;
+    font-family: var(--open-sans-16-regular-family);
+    font-size: var(--open-sans-16-regular-size);
+    font-weight: var(--open-sans-16-regular-weight);
+    line-height: var(--open-sans-16-regular-line-height);
+  }
+  &__subtitle {
+    font-family: var(--open-sans-16-bold-family);
+    font-size: var(--open-sans-16-bold-size);
+    font-weight: var(--open-sans-16-bold-weight);
+    line-height: var(--open-sans-16-bold-line-height);
+  }
+}
+
+.how-to {
+  // background-image: url(../images/how-to-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-bottom: 100px;
+  margin-top: 100px;
+  &__img {
+    margin: auto;
+  }
+  &__box {
+    text-align: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    position: relative;
+  }
+  & svg {
+    fill: white;
+  }
+  & path {
+    stroke: white;
+    stroke-dasharray: 2;
+  }
+  & circle {
+    fill: white;
+    r: 3px;
+  }
+  & circle,
+  &__svg-circle,
+  & text,
+  & foreignObject {
+    transition: $transition;
+    cursor: pointer;
+  }
+  & g:hover circle {
+    r: 10px;
+  }
+  & g:hover .how-to__svg-circle {
+    r: 6px;
+  }
+  & foreignObject {
+    text-align: left;
+    color: white;
+  }
+  & g:hover text,
+  & g:hover foreignObject {
+    fill: #1391f8;
+    font-size: 1.05rem;
+    color: #1391f8;
+  }
+
+  &__svg {
+    position: absolute;
+    top: -38px;
+    left: 15px;
+    // background-color: rgba($color: grey, $alpha: .1);
+  }
+}

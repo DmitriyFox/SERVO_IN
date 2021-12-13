@@ -1,0 +1,37 @@
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
+
+.button-link,
+.button-link_flat,
+.button-link_stoke {
+  @extend %btn3;
+  
+  &_flat {
+    background: $brand;
+    &:hover {
+      background: $brand;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+  &_stoke {
+    background: #fff;
+    border: 2px solid $brand;
+    box-sizing: border-box;
+    color: $brand;
+    &:hover {
+      background: $brand;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+  }
+}
+
+.logo {
+  padding-top: 10px;
+  min-width: 268px;
+}
+
+._shadow {
+  box-shadow: $shadow;
+}
