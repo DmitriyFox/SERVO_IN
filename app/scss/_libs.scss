@@ -4,25 +4,41 @@
 .button-link,
 .button-link_flat,
 .button-link_stoke {
-  @extend %btn3;
-  
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 26px;
+  cursor: pointer;
+  background: $brand;
+  // background: linear-gradient(#0072da, #005098);
+  color: #fff;
+  font-family: $brand-font;
+  font-weight: bold;
+  letter-spacing: 0.07rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: $shadow-hi;
+  transition: $transition;
+
+  &:hover {
+    background: $brand-light;
+    box-shadow: $shadow;
+    // background: linear-gradient(#0a84ff, #0065bd);
+  }
   &_flat {
     background: $brand;
     &:hover {
-      background: $brand;
+      background: $brand-light;
       color: #fff;
-      border: 2px solid #fff;
     }
   }
   &_stoke {
-    background: #fff;
     border: 2px solid $brand;
-    box-sizing: border-box;
+    background: #fff;
     color: $brand;
     &:hover {
+      border: 2px solid #fff;
       background: $brand;
       color: #fff;
-      border: 2px solid #fff;
     }
   }
 }
