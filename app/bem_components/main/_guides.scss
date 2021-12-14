@@ -60,6 +60,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
+  border: 3px dotted;
 }
 .guides__promo,
 .guides__help {
@@ -74,7 +75,7 @@ body {
   border-radius: var(--border-radius);
 }
 .guides__promo {
-  background-image: url(/img/add-bg.jpg);
+  background-image: url(../../images/content/add/promo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,4 +191,47 @@ body {
   font-size: 12px;
   line-height: 16px;
   color: #8a8a8a;
+}
+.guides {
+  padding-bottom: 200px;
+  color: #fff;
+
+  &__inner {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr;
+    grid-gap: 16px;
+    background-color: rgb(248, 136, 136);
+  }
+  &__content &__title {
+    font-size: 28px;
+    line-height: 34px;
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 16px;
+  }
+
+  &__popup {
+    background-image: url(../images/content/add/info-img-2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.promo {
+  
+  &__title {
+    font-size: 24px;
+    text-align: left;
+    margin: 10px 0;
+  }
+  &__lead {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-family: $font;
+  }
 }

@@ -1804,7 +1804,18 @@ h6 {
 .news__item-text {
   color: #787878;
 }
-
+ &::before {
+     content: "";
+     position: absolute;
+      left: 0;
+     top: 200px - 30px;
+     height: 30px;
+     width: 100%;
+     background: linear-gradient(
+       180deg,
+       rgba(0, 114, 218, 0) 0%,
+       $brand 100%
+     );
 .footer {
   color: #fff;
   letter-spacing: 0.02em;
