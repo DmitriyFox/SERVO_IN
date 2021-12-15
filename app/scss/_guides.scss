@@ -1,8 +1,3 @@
-/* style "guides" */
-/* @import url(../../css/style.min.css);
-@import url(../../scss/*.scss); */
-/* @import url(../../bem_components/lib/normalize.css); */
-
 /* Local variable */
 :root {
   /* Fonts */
@@ -17,56 +12,21 @@
   --transition: $transition;
 }
 
-/* Reset */
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Style */
-body {
-  font-family: var(--base-font);
-  box-sizing: border-box;
-  background-color: lightskyblue;
-}
 .guides {
 }
-.container {
-  max-width: 1176px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+
+
 .guides__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
-  border: 3px dotted;
+  justify-content: center;
 }
 .guides__promo,
-.guides__help {
+.guides__help,
+.guides__block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
   background-color: white;
   padding: 20px;
@@ -81,9 +41,9 @@ body {
   background-size: cover;
   font-family: var(--brand-font);
   padding-top: 70px;
-  padding-bottom: 50px;
   padding-left: 40px;
   padding-right: 260px;
+  color: #fff;
 }
 .guides__promo-label {
   padding: 6px 26px;
@@ -126,6 +86,7 @@ body {
   border: 2px solid #0072da;
   cursor: pointer;
 }
+
 .guides__promo-link:hover {
   color: #fff;
   background: var(--brand-color);
@@ -137,10 +98,13 @@ body {
 }
 
 .guides__help-title {
-  font-family: var(--brand-font);
-  font-weight: normal;
+  font-family: $brand-font;
+  // font-weight: normal;
   font-size: 28px;
   line-height: 34px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
 }
 .guides__help-list {
   display: flex;
@@ -152,9 +116,9 @@ body {
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
+  color: $dark-grey;
 }
 .guides__help-item {
-  display: flex;
   min-height: 80px;
   margin-top: 12px;
   background-color: white;
@@ -169,6 +133,20 @@ body {
   text-decoration: none;
   position: relative;
 }
+// .guides__link-img_icon::before {
+//   content: '..\bem_components\main\img\icon-play.svg';
+//   // content: '>>>';
+//   content: '../images/favicon.png';
+//   content: '';
+//   background-image: url('../images/favicon.png');
+//   background-image: url('../bem_components/main/img/icon-play.svg');
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 37px;
+//   height: 37px;
+//   background-color: hotpink;
+// }
 .guides__help-img {
   width: 120px;
   object-fit: cover;
@@ -193,25 +171,15 @@ body {
   color: #8a8a8a;
 }
 .guides {
-  padding-bottom: 200px;
-  color: #fff;
-
-  &__inner {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    // grid-template-rows: 1fr;
-    grid-gap: 16px;
-    background-color: rgb(248, 136, 136);
-  }
   &__content &__title {
     font-size: 28px;
     line-height: 34px;
     text-align: left;
     font-weight: normal;
-    margin-bottom: 16px;
+    margin-bottom: 4px;
   }
-
+  &__title {
+  }
   &__popup {
     background-image: url(../images/content/add/info-img-2.jpg);
     background-repeat: no-repeat;
@@ -221,9 +189,16 @@ body {
     justify-content: center;
     align-items: center;
   }
+  &__block {
+    padding: 16px 30px;
+  }
+  &__item {
+    display: flex;
+    min-height: 80px;
+    background-color: grey;
+  }
 }
 .promo {
-  
   &__title {
     font-size: 24px;
     text-align: left;

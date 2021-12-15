@@ -3,7 +3,7 @@
 @import "libs";
 @import "global";
 @import "scheme";
-@import "../bem_components/main/guides";
+@import "guides";
 @import "install";
 @import "achieved";
 @import "special_X";
@@ -143,9 +143,11 @@
 }
 
 .top {
+  &__main {
+    margin-top: 40px;
+  }
   &__inner {
     padding-top: 20px;
-    margin: 40px 0;
     position: relative;
     &::after {
       content: "";
@@ -211,7 +213,6 @@
 
 .main-categories {
   text-align: center;
-  padding: 100px 0 100px;
   font-family: $brand-font;
   color: $default;
   &__title {
@@ -311,7 +312,6 @@
 }
 
 .popular {
-  padding: 120px 0 220px;
   font-family: $brand-font;
   &__inner {
     text-align: center;
@@ -534,8 +534,6 @@
 }
 
 .news {
-  margin-top: 100px;
-  padding-bottom: 120px;
   &__title {
     @extend %title;
     margin: 0 auto 40px;

@@ -1139,7 +1139,6 @@ h6 {
 
 .top__inner {
   padding-top: 50px;
-  margin: 40px 0;
   position: relative;
 }
 
@@ -1210,7 +1209,6 @@ h6 {
 
 .main-categories {
   text-align: center;
-  padding: 100px 0 100px;
   font-family: "Exo 2", "Open Sans", sans-serif;
   color: #281424;
 }
@@ -1378,7 +1376,6 @@ h6 {
 }
 
 .popular {
-  padding: 120px 0 220px;
   font-family: "Exo 2", "Open Sans", sans-serif;
 }
 
