@@ -1,6 +1,0 @@
-.popular__link:nth-child(3)
-, .popular__link:nth-child(6) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-/*# sourceMappingURL=test.css.map */
