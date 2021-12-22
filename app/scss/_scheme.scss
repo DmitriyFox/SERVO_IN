@@ -73,6 +73,9 @@
     transition: $transition;
     cursor: pointer;
   }
+  & text {
+    fill: $brand;
+  }
   & g:hover circle {
     r: 10px;
   }
