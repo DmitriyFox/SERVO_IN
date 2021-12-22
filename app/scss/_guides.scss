@@ -35,7 +35,7 @@
   border-radius: var(--border-radius);
 }
 .guides__promo {
-  background-image: url(../../images/content/add/promo.jpg);
+  background-image: url(../../img/content/add/promo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,9 +136,9 @@
 // .guides__link-img_icon::before {
 //   content: '..\bem_components\main\img\icon-play.svg';
 //   // content: '>>>';
-//   content: '../images/favicon.png';
+//   content: '../img/favicon.png';
 //   content: '';
-//   background-image: url('../images/favicon.png');
+//   background-image: url('../img/favicon.png');
 //   background-image: url('../bem_components/main/img/icon-play.svg');
 //   position: absolute;
 //   top: 0;
@@ -181,7 +181,7 @@
   &__title {
   }
   &__popup {
-    background-image: url(../images/content/add/info-img-2.jpg);
+    background-image: url(../img/content/add/info-img-2.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

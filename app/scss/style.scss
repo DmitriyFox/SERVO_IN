@@ -145,22 +145,13 @@
     margin-top: 40px;
   }
   &__inner {
-    padding-top: 20px;
     position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      // background-image: url(../images/slider-bg.jpg);
-      background-color: rgb(255 255 255 / 85%);
-      width: 100%;
-      min-height: 102%;
-      top: 0;
-      z-index: -1;
-      border-radius: $border-radius;
-    }
   }
   &__slider {
     font-family: $brand-font;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: $border-radius;
   }
   &__slider-inner {
     display: flex;
@@ -465,7 +456,7 @@
     min-height: 80px;
     width: 124px;
     margin-right: 20px;
-    background-image: url(../images/content/add/info-img-2.jpg);
+    background-image: url(../img/content/add/info-img-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -476,7 +467,7 @@
     // bottom: 0;
     // width: 37px;
     // height: 37px;
-    // background-image: url(../images/play-button.svg);
+    // background-image: url(../img/play-button.svg);
   }
   &__popup-imgbtn {
     float: left;
@@ -484,7 +475,7 @@
 }
 .decor {
   background-color: #0a4caa;
-  background-image: url(../images/achievements_block73kbSquooshMozJPEG95.jpg);
+  background-image: url(../img/achievements_block73kbSquooshMozJPEG95.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;

@@ -46,14 +46,14 @@ $transition: all 0.4s ease-in-out;
 $border-radius: 0.8rem;
 
 %footer__background {
-  background: url(../images/footer-back-image8bit.png) center top no-repeat,
+  background: url(../img/footer-back-image8bit.png) center top no-repeat,
     // rgb(0, 41, 155),
     linear-gradient(180deg, rgba(0, 150, 250, 0.8) 0%, rgb(0, 50, 150) 100%),
     rgb(0, 41, 155);
 }
 
 %footer-img {
-  background-image: url(../images/footer-back-image.jpg);
+  background-image: url(../img/footer-back-image.jpg);
 }
 
 %__btn {

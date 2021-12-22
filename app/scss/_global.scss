@@ -9,6 +9,7 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: $default;
+  background: url(../img/header-bg.png) no-repeat top center;
   background: $body-bg;
   overflow-x: hidden;
   min-width: 320px;
@@ -23,6 +24,7 @@ button {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+
 }
 // ALTERNATIVE FOR FOOTER DOWN POSITION //
 // .wrapper {
@@ -34,6 +36,8 @@ button {
 
 .main {
   flex: 1 0 auto;
+  background: url(../img/header-bg.png) no-repeat top center;
+
 }
 .footer {
   flex: 0 0 auto;
