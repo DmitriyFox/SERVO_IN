@@ -1,0 +1,60 @@
+.group {
+  margin-top: 30px;
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 72px;
+  }
+
+  &__items {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 272px;
+    min-height: 300px;
+    padding: 20px 30px;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+&__item-img {
+}
+
+&__item-title {
+      font-family: $brand-font;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+  }
+
+  &__item-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__item-desc {
+    font-size: $h4;
+    font-weight: 700;
+    color: $brand;
+  }
+
+  &__item-link {
+    font-family: Exo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+
+
+

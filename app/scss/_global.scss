@@ -72,10 +72,12 @@ h6 {
   text-align: center;
 }
 .breadcrumbs {
-  padding: 20px 0 26px 96px;
   color: $brand;
   &__list {
-    display: flex;
+    margin: 20px 0 20px 72px;
+  }
+  &__item {
+    display: inline-block;
   }
   &__item::after {
     content: ">";
