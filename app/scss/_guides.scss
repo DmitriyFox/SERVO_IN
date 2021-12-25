@@ -12,10 +12,6 @@
   --transition: $transition;
 }
 
-.guides {
-}
-
-
 .guides__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -91,17 +87,16 @@
   color: #fff;
   background: var(--brand-color);
   border: 2px solid #fff;
-  transition: var(--transition);
+  transition: $transition;
 }
 .guides__help {
   padding: 18px 30px 28px 30px;
 }
 
 .guides__help-title {
+  margin-bottom: 6px;
   font-family: $brand-font;
   // font-weight: normal;
-  font-size: 28px;
-  line-height: 34px;
   font-size: 16px;
   line-height: 19px;
   text-align: left;
@@ -123,36 +118,41 @@
   margin-top: 12px;
   background-color: white;
   box-shadow: var(--box-shadow-ligh);
+  transition: $transition;
 }
 .guides__help-item:hover {
   box-shadow: var(--box-shadow);
-  transition: var(--transition);
 }
 .guides__help-link {
   display: flex;
   text-decoration: none;
   position: relative;
 }
-// .guides__link-img_icon::before {
-//   content: '..\bem_components\main\img\icon-play.svg';
-//   // content: '>>>';
-//   content: '../img/favicon.png';
-//   content: '';
-//   background-image: url('../img/favicon.png');
-//   background-image: url('../bem_components/main/img/icon-play.svg');
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 37px;
-//   height: 37px;
-//   background-color: hotpink;
-// }
 .guides__help-img {
   width: 120px;
   object-fit: cover;
   position: relative;
+  flex-basis: 120px;
 }
-.guides__help-link--video {
+.guides__help-video {
+  min-width: max-content;
+}
+.guides__help-video::after {
+  // content: url("../img/favicon.png");
+  content: "";
+  background: url(../bem_components/main/img/icon-play.svg) center no-repeat;
+  position: absolute;
+  top: calc(50% - 18px);
+  left: 40px;
+  width: 37px;
+  height: 37px;
+  box-shadow: $shadow-hi;
+  transition: $transition;
+  border-radius: 50%;
+}
+.guides__help-video:hover::after {
+  background-color: $accent-color;
+  // background-color: $brand;
 }
 .guides__help-box {
   padding: 10px 12px 10px 20px;
@@ -207,6 +207,7 @@
   &__lead {
     margin-bottom: 20px;
     font-size: 12px;
+    line-height: 1.5em;
     font-family: $font;
   }
 }
