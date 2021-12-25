@@ -6,55 +6,71 @@
     text-align: left;
     margin-left: 72px;
   }
-
   &__items {
     padding-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    grid-gap: 16px;
   }
-
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 24%;
     max-width: 272px;
-    min-height: 300px;
-    padding: 20px 30px;
+    height: 360px;
+    padding: 30px 20px;
     background-color: #fff;
-    text-align: center;
-
-}
-
-&__item-img {
-}
-
-&__item-title {
-      font-family: $brand-font;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 31px;
+    border-radius: 0.8rem;
+    box-shadow: $shadow;
+  }
+  &__item-img {
+    margin-bottom: 20px;
+    &-wrap {
+      position: relative;
+      &:after {
+        position: absolute;
+        width: 80%;
+        height: 10%;
+        left: 10%;
+        border-radius: 50%;
+        // z-index: -1;
+        bottom: 40%;
+        content: "";
+        box-shadow: 0 50px 24px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  &__item-title {
+    font-family: $brand-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2em;
+    margin-bottom: 0.3em;
   }
 
   &__item-subtitle {
     font-size: 14px;
+    line-height: 1.2em;
     font-weight: 400;
   }
 
   &__item-desc {
+    margin-top: 6px;
+    margin-bottom: 10px;
     font-size: $h4;
     font-weight: 700;
     color: $brand;
   }
 
   &__item-link {
-    font-family: Exo;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
+    margin-top: auto;
+    background-color: $grey-light;
+    color: $brand;
+    &:hover {
+      color: white;
+      background-color: $brand;
+    }
   }
 }
-
-
-
-
