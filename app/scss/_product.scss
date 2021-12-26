@@ -1,0 +1,40 @@
+.product {
+    &__section {
+        margin-top: 40px;
+    }
+    &__title {
+    }
+
+    &__img {
+
+        &_blure {
+        }
+    }
+}
+.container {
+}
+.title {
+}
+.product-card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: $border-radius;
+    padding: 40px 60px;
+    &__main {
+        margin-top: 40px;
+        background-image: url(../img/product__card-bg.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    &__img {
+
+    }
+    &__common {
+    }
+
+    &__specific {
+    }
+
+    &__title {
+    }
+}

@@ -24,7 +24,6 @@ button {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-
 }
 // ALTERNATIVE FOR FOOTER DOWN POSITION //
 // .wrapper {
@@ -37,7 +36,6 @@ button {
 .main {
   flex: 1 0 auto;
   background: url(../img/header-bg.png) no-repeat top center;
-
 }
 .footer {
   flex: 0 0 auto;
@@ -61,6 +59,12 @@ button {
 
 .title {
   @extend %title;
+}
+.title-h3 {
+  margin: 0;
+  font-size: 24px;
+  text-align: left;
+  margin-left: 72px;
 }
 h6 {
   // font-family: Exo 2;

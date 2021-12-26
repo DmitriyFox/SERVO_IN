@@ -9,6 +9,8 @@
 @import "achieved";
 @import "slider";
 @import "catalog";
+@import "product";
+@import "footer";
 
 .header-top {
   display: flex;
@@ -614,93 +616,7 @@
   }
 }
 
-.footer {
-  @extend %footer__background;
-  color: #fff;
-  letter-spacing: 0.02em;
-  &__content {
-    padding: 40px 0 20px;
-  }
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    align-items: stretch;
-  }
-  &__map {
-    width: 360px;
-    max-height: 220px;
-    margin-right: 5%;
-    background-image: url(../bem_components/footer/__map/map-box.png);
-    background-repeat: no-repeat;
-    border-radius: 40px 0 40px 40px;
-  }
-  &__map-iframe {
-    border-radius: inherit;
-  }
-  &__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 440px;
-    margin-right: auto;
-    padding-right: 10px;
-  }
-  &__info-text {
-    margin-bottom: 26px;
-  }
-  &__info-list {
-    font-weight: bold;
-  }
-  &__info-item {
-    margin-top: 0.5rem;
-  }
-  &__contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-    // min-width: 200px;
-    // margin-left: 70px;
-    font-size: 20px;
-    text-align: right;
-  }
-  &__logo {
-    min-width: 200px;
-    margin-bottom: auto;
-    margin-top: 10px;
-  }
-  &__contacts-item {
-    margin-top: 0.5rem;
-    position: relative;
-  }
-  &__contacts-link {
-    color: inherit;
-    &_phone {
-      font-family: $brand-font;
-      font-weight: 700;
-      padding-left: 18px;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 20px;
-        top: 4px;
-        width: 18px;
-        height: 18px;
-        background-image: url(../bem_components/icon/__phone.svg);
-      }
-    }
-  }
-  &__copyright {
-    padding: 0 0 20px;
-    font-size: 12px;
-    line-height: 130%;
-    letter-spacing: 0.01em;
-    opacity: 0.5;
-    text-align: center;
-    color: #ffffff;
-  }
-}
+
 
 .works-path {
   padding: 80px 0 30px;

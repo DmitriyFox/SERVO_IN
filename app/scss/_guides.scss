@@ -119,6 +119,8 @@
   background-color: white;
   box-shadow: var(--box-shadow-ligh);
   transition: $transition;
+  border-radius: calc($border-radius / 2);
+  overflow: hidden;
 }
 .guides__help-item:hover {
   box-shadow: var(--box-shadow);
@@ -133,6 +135,7 @@
   object-fit: cover;
   position: relative;
   flex-basis: 120px;
+  border-radius: calc($border-radius / 2);
 }
 .guides__help-video {
   min-width: max-content;

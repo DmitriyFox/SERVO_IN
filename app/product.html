@@ -46,7 +46,7 @@
                 </div>
                 <div class="header-top">
                     <a class="logo" href="index.html">
-                        <img src="img/logo__slug.svg" alt="logo" />
+                        <img class="product-card__img" src="img/logo__slug.svg" alt="logo" />
                     </a>
                     <nav class="menu">
                         <ul class="menu__list">
@@ -95,37 +95,47 @@
                 </div>
             </div>
 
-            <div class="product">
+            <section class="product product__section">
+
                 <div class="container">
-                    <h2 class="title product__title">
+
+                    <h2 class="title title-h3 product__title">
                         Автономная канализация «БИОН 3»
                     </h2>
-                    <section class="product-card">
-                        <img src="img/content/product-img.png" alt="Автономная канализация «БИОН 3»">
-                        <img src="img/content/product-img_1.png" alt="Автономная канализация «БИОН 3»">
-                        24.000 ₽
-                        Септик + монтаж
-                        47.400 ₽
-                        ЗАКАЗАТЬ
-                        Для проживания
-                        1-3 человека
-                        Размер (мм)
-                        1512 х 1200
-                        Производительность
-                        500 л/сутки
-                        Залповый сброс
-                        150 л
-                        Энергонезависимый септик объемом 1.5 м3 для проживания 1-3 человек
+
+                    <section class="product-card product-card__main">
+                        <img class="product-card__img" src="img/content/product-img.png" alt="Автономная канализация «БИОН 3»">
+                        <div class="product-card__parameters">
+                            Для проживания
+                            1-3 человека
+                            Размер (мм)
+                            1512 х 1200
+                            Производительность
+                            500 л/сутки
+                            Залповый сброс
+                            150 л
+                        </div>
+                        <h3 class="product-card__title">Автономная канализация «БИОН 3»</h3>
+                        <p class="product-card__price">24.000 ₽</p>
+                        <p class="product-card__price_install">
+                            <span>Септик + монтаж</span>
+                            47.400 ₽
+                        </p>
+                        <a class="button-link" href="#pay">ЗАКАЗАТЬ</a>
+                        <div class="product-card__description">Энергонезависимый септик объемом 1.5 м3 для проживания 1-3 человек</div>
+                        
                     </section>
-                    <section class="product-card__common">
+
+                    <section class="product-card product-card__common">
                         Надежная автономная канализация
                         от производителя
-                        <img src="img/content/product__img-bg_hi.png" alt="Автономная канализация «БИОН 3»">
-                        <img src="img/content/product__img-bg_hi_noblur.png" alt="Автономная канализация «БИОН 3»">
-                        <img src="img/content/product__img-cut_hi.png" alt="">
-                        <img class="product__img_blure" src="img/content/product__img-bg_hi_noblur_1.png" alt="Автономная канализация «БИОН 3»">
-                        <img src="img/content/product__img-bg_hi_256.png" alt="Автономная канализация «БИОН 3»">
-                        <img src="img/content/product__img-cut_hi_1.png" alt="">
+                        <img class="product-card__img" src="img/content/product__img-bg_hi.png" alt="Автономная канализация «БИОН 3»">
+                        <img class="product-card__img" src="img/content/product__img-bg_hi_noblur.png" alt="Автономная канализация «БИОН 3»">
+                        <img class="product-card__img" src="img/content/product__img-cut_hi.png" alt="">
+                        <img class="product__img_blure" src="img/content/product__img-bg_hi_noblur_1.png"
+                            alt="Автономная канализация «БИОН 3»">
+                        <img class="product-card__img" src="img/content/product__img-bg_hi_256.png" alt="Автономная канализация «БИОН 3»">
+                        <img class="product-card__img" src="img/content/product__img-cut_hi_1.png" alt="">
                         <div>
                             Полная автономность
                             В септике отсутствуют электронные компоненты — ему не нужно электричество для работы. Он
@@ -147,14 +157,15 @@
                             Септик спроектирован для использования в сложных климатических условиях и болотистом грунте.
                         </div>
                     </section>
-                    <section class="product-card__specifications">
+
+                    <section class="product-card product-card__specific">
                         <h3 class="product-card__title">
                             Технические характеристики
                         </h3>
-                        <img src="img/content/product__img-bg_min.png" alt="">
-                        <img src="img/content/product__img-cut_min.png" alt="">
-                        <img src="img/content/product__img-bg_min_1.png" alt="">
-                        <img src="img/content/product__img-cut_min_1.png" alt="">
+                        <img class="product-card__img" src="img/content/product__img-bg_min.png" alt="">
+                        <img class="product-card__img" src="img/content/product__img-cut_min.png" alt="">
+                        <img class="product-card__img" src="img/content/product__img-bg_min_1.png" alt="">
+                        <img class="product-card__img" src="img/content/product__img-cut_min_1.png" alt="">
                         <table>
                             Автономная канализация «БИОН 3»
                             Число пользователей
@@ -175,9 +186,10 @@
                             Стеклопластик
                         </table>
                     </section>
-                </div>
-            </div>
 
+                </div>
+
+            </section>
 
 
 
@@ -189,6 +201,8 @@
             </section>
 
         </main>
+
+
 
         <footer class="footer">
             <div class="footer__content">
@@ -225,7 +239,7 @@
                         <div class="footer__contacts">
                             <div class="footer__logo">
                                 <a class="logo" href="index.html">
-                                    <img src="img/footer__logo_invert.svg" alt="logo" />
+                                    <img class="product-card__img" src="img/footer__logo_invert.svg" alt="logo" />
                                 </a>
                             </div>
 
