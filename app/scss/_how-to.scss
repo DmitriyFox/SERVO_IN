@@ -1,0 +1,77 @@
+.how-to {
+  &__section {
+    margin-top: -400px;
+    padding: 200px 0;
+    // background-image: url(../img/how-to-bg.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: top center;
+    background: linear-gradient(
+      180deg,
+      rgba(94, 250, 91, 0) 0%,
+      #35e7be 35%,
+      rgba(137, 246, 98, 0) 100%
+    );
+  }
+  &__img {
+    margin: auto;
+  }
+  &__box {
+    // text-align: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    position: relative;
+  }
+  &__svg {
+    position: absolute;
+    top: -38px;
+    left: 15px;
+    // background-color: rgba($color: grey, $alpha: 0.1);
+  }
+  &__unit-block {
+  }
+  & svg {
+    fill: white;
+  }
+  & path {
+    stroke: white;
+    stroke-dasharray: 2;
+  }
+  &__svg-circle,
+  & circle,
+  & text,
+  & foreignObject {
+    transition: $transition;
+    cursor: pointer;
+  }
+  &__svg-circle {
+    r: 2px;
+    &_unit {
+      r: 20px;
+    }
+  }
+  & text {
+    // fill: $brand;
+    fill: #fff;
+  }
+  & g:hover circle {
+    r: 10px;
+  }
+  & g:hover .how-to__svg-circle {
+    r: 4px;
+  }
+  & foreignObject {
+    text-align: left;
+    color: white;
+  }
+  & g:hover text,
+  & g:hover foreignObject {
+    font-size: 1.05rem;
+    // fill: $brand;
+    // color: $brand;
+  }
+}
+circle {
+  r: 3px;
+}

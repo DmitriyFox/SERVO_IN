@@ -59,12 +59,15 @@ button {
 
 .title {
   @extend %title;
-}
-.title-h3 {
-  margin: 0;
-  font-size: 24px;
-  text-align: left;
-  margin-left: 72px;
+  &-h3 {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 72px;
+  }
+  &_hide {
+    display: none;
+  }
 }
 h6 {
   // font-family: Exo 2;
