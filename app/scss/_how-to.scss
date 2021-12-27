@@ -1,7 +1,8 @@
 .how-to {
   &__section {
-    margin-top: -400px;
-    padding: 200px 0;
+    margin-top: -200px;
+    padding-top: 200px;
+    padding-bottom: 50px;
     // background-image: url(../img/how-to-bg.jpg);
     // background-size: cover;
     // background-repeat: no-repeat;
@@ -13,30 +14,33 @@
       rgba(137, 246, 98, 0) 100%
     );
   }
+  &__title {
+    margin-bottom: 120px;
+  }
   &__img {
     margin: auto;
   }
   &__box {
-    // text-align: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
   }
   &__svg {
     position: absolute;
     top: -38px;
     left: 15px;
-    // background-color: rgba($color: grey, $alpha: 0.1);
   }
   &__unit-block {
   }
-  & svg {
-    fill: white;
+  &__unit-tspan {
+    fill: $brand;
+    font-weight: 700;
   }
-  & path {
-    stroke: white;
-    stroke-dasharray: 2;
+  &__signature {
+    max-width: 800px;
+    margin: 100px auto;
   }
   &__svg-circle,
   & circle,
@@ -46,30 +50,44 @@
     cursor: pointer;
   }
   &__svg-circle {
+    &_two {
+    }
     r: 2px;
     &_unit {
       r: 20px;
+      opacity: 0.8;
     }
   }
-  & text {
-    // fill: $brand;
-    fill: #fff;
+
+  & svg {
+    fill: white;
   }
-  & g:hover circle {
+  & path {
+    stroke: white;
+    stroke-dasharray: 2;
+  }
+  & text {
+    fill: $default;
+  }
+  & g:hover .how-to__svg-circle_two {
     r: 10px;
+    opacity: .7;
   }
   & g:hover .how-to__svg-circle {
     r: 4px;
   }
   & foreignObject {
-    text-align: left;
-    color: white;
+    // text-align: right;
+    // text-align: left;
+    text-align: center;
+    color: $default;
   }
   & g:hover text,
   & g:hover foreignObject {
     font-size: 1.05rem;
-    // fill: $brand;
-    // color: $brand;
+  }
+  & g:hover .how-to__unit-text {
+    font-size: 1rem;
   }
 }
 circle {

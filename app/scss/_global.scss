@@ -58,7 +58,12 @@ button {
 }
 
 .title {
-  @extend %title;
+  font-family: $brand-font;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 20px;
   &-h3 {
     margin: 0;
     font-size: 24px;
