@@ -18,13 +18,13 @@
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
-  box-shadow: $shadow;
+  box-shadow: $box-shadow;
   transition: $transition;
   // background: linear-gradient(#0072da, #005098);
 
   &:hover {
     background: $brand-light;
-    box-shadow: $shadow-hi;
+    box-shadow: $box-shadow-hi;
     // background: linear-gradient(#0a84ff, #0065bd);
   }
   &_flat {
@@ -52,7 +52,7 @@
 }
 
 ._shadow {
-  box-shadow: $shadow;
+  box-shadow: $box-shadow;
 }
 
 .label {

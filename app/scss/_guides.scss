@@ -111,7 +111,7 @@
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
-  color: $dark-grey;
+  color: $grey-dark;
 }
 .guides__help-item {
   min-height: 80px;
@@ -149,7 +149,7 @@
   left: 40px;
   width: 37px;
   height: 37px;
-  box-shadow: $shadow-hi;
+  box-shadow: $box-shadow-hi;
   transition: $transition;
   border-radius: 50%;
 }

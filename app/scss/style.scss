@@ -22,7 +22,7 @@
   padding: 8px 20px;
   background: #ffffff;
   border-radius: 100px;
-  box-shadow: $shadow;
+  box-shadow: $box-shadow;
   min-width: max-content;
   &__btn {
     @extend %__btn;
@@ -230,11 +230,11 @@
   margin: 0 auto;
   &__item {
     position: relative;
-    box-shadow: $shadow;
+    box-shadow: $box-shadow;
     border-radius: $border-radius;
     min-width: 200px;
     &:hover {
-      box-shadow: $shadow-hi;
+      box-shadow: $box-shadow-hi;
       transition: $transition;
       .categories__link {
         opacity: 1;
@@ -333,9 +333,9 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-color: #fff;
-    box-shadow: $shadow;
+    box-shadow: $box-shadow;
     &:hover {
-      box-shadow: $shadow-hi;
+      box-shadow: $box-shadow-hi;
       .popular__more {
         background: $brand-gradient;
         color: #fff;
@@ -421,7 +421,7 @@
     min-height: 80px;
     margin-top: 18px;
     // overflow: hidden;
-    // box-shadow: $shadow-hi;
+    // box-shadow: $box-shadow-hi;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.16);
   }
   &__info-link {
@@ -548,13 +548,13 @@
     border-radius: $border-radius;
     overflow: hidden;
     padding-bottom: 14px;
-    box-shadow: $shadow;
+    box-shadow: $box-shadow;
     position: relative;
     transition: $transition;
     &:hover {
       transition: $transition;
       background-color: $brand;
-      box-shadow: $shadow-hi;
+      box-shadow: $box-shadow-hi;
       box-shadow: 0 0px 10px 0px $brand;
       color: #fff;
 
