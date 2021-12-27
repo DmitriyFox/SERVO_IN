@@ -1,0 +1,67 @@
+.popular {
+    font-family: $brand-font;
+    &__inner {
+      text-align: center;
+    }
+    &__title {
+      margin-bottom: 50px;
+      @extend %title;
+    }
+    &__list {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(4, 1fr);
+      // grid-template-rows: repeat(2, 1fr);
+      grid-gap: 16px;
+      padding-bottom: 40px;
+    }
+    &__link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 360px;
+      padding: 172px 18px 42px;
+      line-height: 130%;
+      border-radius: $border-radius;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-color: #fff;
+      box-shadow: $box-shadow;
+      &:hover {
+        box-shadow: $box-shadow-hi;
+        .popular__more {
+          background: $brand-gradient;
+          color: #fff;
+          transition: $transition;
+        }
+      }
+    }
+    &__link-title,
+    &__text,
+    &__desc {
+      margin-bottom: 10px;
+    }
+    &__link-title {
+      font-size: 26px;
+    }
+    &__text {
+      font-size: 18px;
+      text-align: center;
+    }
+    &__desc {
+      font-size: 22px;
+      font-weight: bold;
+      color: $brand;
+    }
+    &__more {
+      padding: 6px 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: $brand;
+      background-color: #e0e0e0;
+      border-radius: 16px;
+      margin-top: auto;
+    }
+  }

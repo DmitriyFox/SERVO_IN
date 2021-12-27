@@ -131,7 +131,7 @@
   position: relative;
 }
 .guides__help-img {
-  width: 120px;
+  min-width: 120px;
   object-fit: cover;
   position: relative;
   flex-basis: 120px;
