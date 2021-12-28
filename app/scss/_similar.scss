@@ -30,6 +30,7 @@
     border-radius: $border-radius;
     background-color: #fff;
     box-shadow: $box-shadow;
+    margin: 0 12px;
     &:hover {
       box-shadow: $box-shadow-hi;
       .similar__more {
