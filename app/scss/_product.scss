@@ -32,7 +32,6 @@
       font-size: 26px;
     }
   }
-
   &__block {
     flex: 50%;
     display: flex;
@@ -41,7 +40,20 @@
     // padding: 0 30px;
     margin: 0 50px;
   }
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
   &__img {
+    z-index: 1;
+    &_blure {
+      filter: blur(10px);
+      position: absolute;
+      transform: translate(-20vw, -40%);
+    }
   }
   &__parameters {
     width: 100%;
@@ -83,19 +95,51 @@
     line-height: 120%;
     color: $grey-dark;
   }
-  &__specific {
+  &__common {
+    &-btn {
+      margin: auto;
+      min-width: 240px;
+      font-size: 26px;
+      margin-top: 20px;
+    }
+    &-block {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-top: -40px;
+    }
   }
-  &__img-wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  &__common-title {
+    font-family: $brand-font;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    color: $brand;
   }
+  &__common-list {
+    font-family: $brand-font;
+    line-height: 120%;
+  }
+  &__common-item-one {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 120%;
+  }
+  &__common-item-two {
+    padding: 20px 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+  }
+
   &__table-title {
     font-family: $font;
     font-weight: normal;
     font-size: 24px;
     margin-bottom: 30px;
     padding-left: 28px;
+  }
+  &__specific {
   }
 }
 .parameters-table {
@@ -113,7 +157,6 @@
     font-weight: 700;
     font-size: 28px;
   }
-
   & td {
     padding: inherit;
     padding-top: 30px;
