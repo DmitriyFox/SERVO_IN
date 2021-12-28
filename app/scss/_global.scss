@@ -4,12 +4,10 @@ body {
 }
 
 body {
-  font-family: $font;
+  font: 16px $font;
   font-weight: 400;
-  font-size: 16px;
   line-height: 150%;
   color: $default;
-  background: url(../img/header-bg.png) no-repeat top center;
   background: $body-bg;
   overflow-x: hidden;
   min-width: 320px;
