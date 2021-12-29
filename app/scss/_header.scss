@@ -8,6 +8,7 @@
   border-radius: 100px;
   box-shadow: $box-shadow;
   min-width: max-content;
+  position: relative;
   &__btn {
     @extend %__btn;
   }
@@ -27,15 +28,14 @@
     margin: 20px;
   }
   &__item {
-    // padding: 0 10px;
     margin: 0px 30px 0px 0;
+    transition: all $transition;
     &:hover .sub-menu__list {
       display: block;
     }
   }
   &__link {
     padding: 0 10px;
-    color: rgb(0, 0, 0);
     font-weight: 700;
     line-height: 120%;
     text-align: center;
@@ -79,19 +79,38 @@
 .arrow {
   position: absolute;
   top: 12px;
-  right: 0;
+  right: 26px;
   width: 0;
   height: 0;
-  --arrow: 6px;
+  --arrow: 4px;
   border-top: var(--arrow) solid $brand;
   border-right: var(--arrow) solid transparent;
   border-left: var(--arrow) solid transparent;
 }
+
+.sub-menu,
+.sub-sub-menu {
+  &__list {
+    display: none;
+    position: absolute;
+    
+  }
+  &__item {
+    background-color: rgba(255, 255, 255, 0.85);
+    // color: $brand;
+    border: solid 2px $brand;
+    border-radius: 40px 0 40px 40px;
+    margin-bottom: 4px;
+  }
+  &__link {
+    // color: rgb(85, 85, 85);
+    padding: 5px 20px;
+  font-weight: 700;
+
+  }
+}
 .sub-menu {
   &__list {
-    // display: none;
-    min-width: 200px;
-    position: absolute;
     left: 0;
     top: 20px;
     padding: 20px 0 0 0;
@@ -105,8 +124,7 @@
   }
 
   &__item {
-    background-color: rgba(255, 255, 255, .8);
-    border-radius: $border-radius;
+    
     &:hover .sub-sub-menu__list {
       display: block;
     }
@@ -119,8 +137,6 @@
   }
 
   &__link {
-    color: rgb(85, 85, 85);
-    padding: 5px 20px;
   }
 }
 .parent {
@@ -128,25 +144,19 @@
 }
 .sub-sub-menu {
   &__list {
-    // display: none;
-    position: absolute;
     top: 0;
     left: 100%;
-    min-width: 100%;
-    min-width: 300px;
     padding: 0 0 0 5px;
-    background-color: rgba(255, 255, 255, 0.8);
   }
 
   &__item {
-    background-color: rgb(240, 240, 240);
   }
 
   &__link {
-    color: rgb(170, 170, 170);
-    padding: 5px 20px;
   }
 }
+
+// End MENU //////////////////////////////////////////
 
 .contacts-header,
 .contacts {
