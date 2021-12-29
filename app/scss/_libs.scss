@@ -56,17 +56,16 @@
     content: "🎄";
     position: absolute;
     // background: url('https://via.placeholder.com/100x50') top no-repeat;
-    top: 18px;
-    right: -10px;
-    left: 10px;
-    // width: 100px;
-    // height: 100px;
-    // background-color: green;
+    top: 16px;
+    right: -12px;
+    left: 12px;
     transition: all $transition;
     transition: ease opacity 0.3s;
     transition-delay: .3s;
+    // cursor: pointer;
   }
   &:hover.logo::before {
+    cursor: unset;
     transition: all $transition;
     opacity: 1;
     transition-delay: .0s;
