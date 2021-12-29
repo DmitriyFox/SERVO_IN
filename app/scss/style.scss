@@ -3,6 +3,7 @@
 @import "reset";
 @import "libs";
 @import "global";
+@import "header";
 @import "popular";
 @import "scheme";
 @import "how-to";
@@ -15,137 +16,7 @@
 @import "similar";
 @import "footer";
 
-.header-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 72px;
-  padding: 8px 20px;
-  background: #ffffff;
-  border-radius: 100px;
-  box-shadow: $box-shadow;
-  min-width: max-content;
-  &__btn {
-    @extend %__btn;
-  }
-}
 
-.menu {
-  // padding-right: 20px;
-  white-space: nowrap;
-  &__list {
-    display: flex;
-  }
-  &__item {
-    padding-top: 4px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  &__link {
-    // @extend %title;
-    font-weight: 700;
-    line-height: 120%;
-    text-align: center;
-    font-size: 16px;
-    color: $default;
-    text-transform: uppercase;
-    position: relative;
-    &:hover {
-      transition: $transition;
-      &::after {
-        content: "";
-        position: absolute;
-        top: -8px;
-        left: -14px;
-        right: -14px;
-        bottom: -8px;
-        color: $brand;
-        border: solid 2px $brand;
-        border-radius: 40px 0 40px 40px;
-        transition: $transition;
-      }
-    }
-  }
-  &__link_active {
-    position: relative;
-    color: $brand;
-    &::after {
-      border: solid 2px $brand;
-      border-radius: 40px 0px 40px 40px;
-      content: "";
-      position: absolute;
-      top: -8px;
-      left: -14px;
-      right: -14px;
-      bottom: -8px;
-      transition: $transition;
-
-      // content: '';
-      // position: absolute;
-      // bottom: 0;
-      // left: 0;
-      // right: 0;
-      // height: 2px;
-      // border-radius: 1px;
-      // background-color: $brand;
-    }
-  }
-}
-
-.contacts-header,
-.contacts {
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    color: $brand;
-    margin: 20px;
-  }
-  &__adress,
-  &__adress-list {
-    display: flex;
-  }
-  &__adress-item {
-    margin-right: 20px;
-    font-size: 14px;
-  }
-  &__adress-item_bold {
-    font-weight: bold;
-    white-space: nowrap;
-  }
-  &__info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    max-width: 300px;
-    position: relative;
-  }
-  &__info-link {
-    color: $brand;
-    position: relative;
-    padding-left: 24px;
-    font-weight: bold;
-    font-size: 15px;
-    text-align: right;
-    &_phone {
-      font-family: $brand-font;
-      text-align: justify;
-      white-space: nowrap;
-      font-size: 22px;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0px;
-        top: 4px;
-        width: 18px;
-        height: 18px;
-        background-image: url(../bem_components/icon/__phone.svg);
-      }
-    }
-  }
-}
 
 .top {
   &__main {
