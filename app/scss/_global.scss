@@ -22,6 +22,10 @@ ul {
   list-style-type: none;
   padding-inline-start: .5em;
 }
+a {
+  color: inherit;
+  display: inline-block;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
