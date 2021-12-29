@@ -26,7 +26,6 @@
   }
   &__list {
     display: flex;
-
     margin: 20px;
     padding: 0;
   }
@@ -47,24 +46,19 @@
     position: relative;
     transition: $transition;
     &::after {
+      display: none;
       content: "";
       position: absolute;
       top: -8px;
       left: -14px;
       right: -14px;
       bottom: -8px;
+      color: $brand;
       border: solid 2px $brand;
       border-radius: 40px 0 40px 40px;
-      color: $brand;
-      opacity: 0;
-      transition: ease opacity 0.3s;
-      transition-delay: 0.1s;
     }
-    &:hover {
-      &::after {
-        opacity: 1;
-        // transition-delay: .1s;
-      }
+    &:hover.menu__link::after {
+      display: block;
     }
   }
   &__link_active {
@@ -82,7 +76,6 @@
       transition: $transition;
     }
   }
-
   &__arrow {
   }
 }
@@ -152,14 +145,19 @@ $arrow: 4px;
 }
 .sub-sub-menu {
   &__list {
+    display: none;
+    position: absolute;
     top: 0;
     left: 100%;
+    min-width: 100%;
+    min-width: 300px;
     padding: 0 0 0 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 
-    &__item {
-    }
-    &__link {
-    }
+  &__item {
+  }
+  &__link {
   }
 }
 // End MENU //////////////////////////////////////////
@@ -202,62 +200,62 @@ $arrow: 4px;
     &_phone {
       font-family: $brand-font;
       text-align: justify;
+    }
     &__link {
     }
   }
+}
+// End MENU //////////////////////////////////////////
 
-  // End MENU //////////////////////////////////////////
-
-  .contacts-header,
-  .contacts {
-    &__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      color: $brand;
-      margin: 20px;
-    }
-    &__adress,
-    &__adress-list {
-      display: flex;
-    }
-    &__adress-item {
-      margin-right: 20px;
-      font-size: 14px;
-    }
-    &__adress-item_bold {
-      font-weight: bold;
+.contacts-header,
+.contacts {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: $brand;
+    margin: 20px;
+  }
+  &__adress,
+  &__adress-list {
+    display: flex;
+  }
+  &__adress-item {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  &__adress-item_bold {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 300px;
+    position: relative;
+  }
+  &__info-link {
+    color: $brand;
+    position: relative;
+    padding-left: 24px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: right;
+    &_phone {
+      font-family: $brand-font;
+      text-align: justify;
       white-space: nowrap;
-    }
-    &__info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      align-items: flex-end;
-      max-width: 300px;
-      position: relative;
-    }
-    &__info-link {
-      color: $brand;
-      position: relative;
-      padding-left: 24px;
-      font-weight: bold;
-      font-size: 15px;
-      text-align: right;
-      &_phone {
-        font-family: $brand-font;
-        text-align: justify;
-        white-space: nowrap;
-        font-size: 22px;
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0px;
-          top: 4px;
-          width: 18px;
-          height: 18px;
-          background-image: url(../bem_components/icon/__phone.svg);
-        }
+      font-size: 22px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 4px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../bem_components/icon/__phone.svg);
       }
     }
   }
