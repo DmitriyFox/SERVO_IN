@@ -26,6 +26,7 @@
   &__list {
     display: flex;
     margin: 20px;
+    padding: 0;
   }
   &__item {
     margin: 0px 30px 0px 0;
@@ -82,16 +83,17 @@
   &__arrow {
   }
 }
+$arrow: 4px;
 .arrow {
   position: absolute;
   top: 12px;
   right: 18px;
   width: 0;
   height: 0;
-  --arrow: 4px;
-  border-top: var(--arrow) solid $brand;
-  border-right: var(--arrow) solid transparent;
-  border-left: var(--arrow) solid transparent;
+  
+  border-top: $arrow solid $brand;
+  border-right: $arrow solid transparent;
+  border-left: $arrow solid transparent;
 }
 
 .sub-menu,
@@ -123,10 +125,10 @@
   }
   &__arrow {
     right: 10px;
-    border-left: var(--arrow) solid $brand;
+    border-left: $arrow solid $brand;
     border-right: none;
-    border-top: var(--arrow) solid transparent;
-    border-bottom: var(--arrow) solid transparent;
+    border-top: $arrow solid transparent;
+    border-bottom: $arrow solid transparent;
   }
 
   &__item {
