@@ -1,9 +1,5 @@
 .header-top {
   display: flex;
-<<<<<<< HEAD
-=======
-
->>>>>>> 673d5f058944d9699d766856565f5e0ad618506b
   justify-content: space-between;
   align-items: center;
   min-height: 72px;
@@ -12,10 +8,6 @@
   border-radius: 100px;
   box-shadow: $box-shadow;
   min-width: max-content;
-<<<<<<< HEAD
-=======
-
->>>>>>> 673d5f058944d9699d766856565f5e0ad618506b
   position: relative;
   &__btn {
     @extend %__btn;
@@ -166,8 +158,6 @@ $arrow: 4px;
 
     &__item {
     }
-<<<<<<< HEAD
-
     &__link {
     }
   }
@@ -212,8 +202,6 @@ $arrow: 4px;
     &_phone {
       font-family: $brand-font;
       text-align: justify;
-=======
-
     &__link {
     }
   }
@@ -239,7 +227,6 @@ $arrow: 4px;
     }
     &__adress-item_bold {
       font-weight: bold;
->>>>>>> 673d5f058944d9699d766856565f5e0ad618506b
       white-space: nowrap;
     }
     &__info {
