@@ -1,5 +1,9 @@
 .header-top {
   display: flex;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 673d5f058944d9699d766856565f5e0ad618506b
   justify-content: space-between;
   align-items: center;
   min-height: 72px;
@@ -8,6 +12,10 @@
   border-radius: 100px;
   box-shadow: $box-shadow;
   min-width: max-content;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 673d5f058944d9699d766856565f5e0ad618506b
   position: relative;
   &__btn {
     @extend %__btn;
@@ -158,6 +166,7 @@ $arrow: 4px;
 
     &__item {
     }
+<<<<<<< HEAD
 
     &__link {
     }
@@ -203,16 +212,65 @@ $arrow: 4px;
     &_phone {
       font-family: $brand-font;
       text-align: justify;
+=======
+
+    &__link {
+    }
+  }
+
+  // End MENU //////////////////////////////////////////
+
+  .contacts-header,
+  .contacts {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      color: $brand;
+      margin: 20px;
+    }
+    &__adress,
+    &__adress-list {
+      display: flex;
+    }
+    &__adress-item {
+      margin-right: 20px;
+      font-size: 14px;
+    }
+    &__adress-item_bold {
+      font-weight: bold;
+>>>>>>> 673d5f058944d9699d766856565f5e0ad618506b
       white-space: nowrap;
-      font-size: 22px;
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0px;
-        top: 4px;
-        width: 18px;
-        height: 18px;
-        background-image: url(../bem_components/icon/__phone.svg);
+    }
+    &__info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: flex-end;
+      max-width: 300px;
+      position: relative;
+    }
+    &__info-link {
+      color: $brand;
+      position: relative;
+      padding-left: 24px;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: right;
+      &_phone {
+        font-family: $brand-font;
+        text-align: justify;
+        white-space: nowrap;
+        font-size: 22px;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0px;
+          top: 4px;
+          width: 18px;
+          height: 18px;
+          background-image: url(../bem_components/icon/__phone.svg);
+        }
       }
     }
   }
