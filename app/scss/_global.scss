@@ -20,7 +20,11 @@ button {
 }
 ul {
   list-style-type: none;
-  padding-inline-start: .5em;
+  padding-inline-start: 0;
+}
+a {
+  color: inherit;
+  display: inline-block;
 }
 .wrapper {
   display: flex;
