@@ -1,0 +1,283 @@
+.header-top {
+  display: flex;
+<<<<<<< Updated upstream
+=======
+  flex-direction: row;
+>>>>>>> Stashed changes
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+  padding: 8px 20px;
+  background: #ffffff;
+  border-radius: 100px;
+  box-shadow: $box-shadow;
+  min-width: max-content;
+<<<<<<< Updated upstream
+  position: relative;
+=======
+>>>>>>> Stashed changes
+  &__btn {
+    @extend %__btn;
+  }
+}
+
+<<<<<<< Updated upstream
+// Start MENU ////////////////////////////////////////
+
+.menu {
+  white-space: nowrap;
+  text-transform: uppercase;
+  z-index: 1;
+=======
+.menu {
+  // padding-right: 20px;
+  white-space: nowrap;
+  text-transform: uppercase;
+>>>>>>> Stashed changes
+  & li {
+    position: relative;
+  }
+  &__list {
+    display: flex;
+<<<<<<< Updated upstream
+    margin: 20px;
+    padding: 0;
+  }
+  &__item {
+    margin: 0px 30px 0px 0;
+    transition: all $transition;
+    &:hover .sub-menu__list {
+      display: block;
+      opacity: 1;
+    }
+  }
+  &__link {
+    padding: 0 10px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    transition: $transition;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: -14px;
+      right: -14px;
+      bottom: -8px;
+      border: solid 2px $brand;
+      border-radius: 40px 0 40px 40px;
+      color: $brand;
+      opacity: 0;
+      transition: ease opacity 0.3s;
+      transition-delay: 0.1s;
+    }
+    &:hover {
+      &::after {
+        opacity: 1;
+        // transition-delay: .1s;
+=======
+  }
+  &__item {
+    // padding-top: 4px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    margin: 0px 20px 0px 0;
+  }
+  &__link {
+    color: green;
+    // font-weight: 700;
+    // line-height: 120%;
+    // text-align: center;
+    // font-size: 16px;
+    // position: relative;
+    // transition: $transition;
+    &:hover {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: -14px;
+        right: -14px;
+        bottom: -8px;
+        color: $brand;
+        border: solid 2px $brand;
+        border-radius: 40px 0 40px 40px;
+>>>>>>> Stashed changes
+      }
+    }
+  }
+  &__link_active {
+    position: relative;
+    color: $brand;
+    &::after {
+      border: solid 2px $brand;
+      border-radius: 40px 0px 40px 40px;
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: -14px;
+      right: -14px;
+      bottom: -8px;
+      transition: $transition;
+    }
+  }
+<<<<<<< Updated upstream
+  &__arrow {
+  }
+}
+$arrow: 4px;
+.arrow {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  width: 0;
+  height: 0;
+  
+  border-top: $arrow solid $brand;
+  border-right: $arrow solid transparent;
+  border-left: $arrow solid transparent;
+}
+
+.sub-menu,
+.sub-sub-menu {
+  &__list {
+    // display: none;
+    position: absolute;
+    opacity: 0;
+    transition: ease opacity 0.3s;
+    transition-delay: 0.1s;
+
+  }
+  &__item {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: solid 2px $brand;
+    border-radius: 40px 0 40px 40px;
+    margin-bottom: 4px;
+  }
+  &__link {
+    padding: 5px 20px;
+    font-weight: 700;
+  }
+}
+.sub-menu {
+  &__list {
+    left: 0;
+    top: 20px;
+    padding: 20px 0 0 0;
+  }
+  &__arrow {
+    right: 10px;
+    border-left: $arrow solid $brand;
+    border-right: none;
+    border-top: $arrow solid transparent;
+    border-bottom: $arrow solid transparent;
+  }
+
+  &__item {
+    &:hover .sub-sub-menu__list {
+      // display: block;
+      opacity: 1;
+    }
+  }
+  &__subtitle {
+    font-size: 10px;
+    text-transform: none;
+    margin-top: 0;
+    padding-top: 0;
+=======
+}
+
+.sub-menu {
+  &__list {
+  }
+
+  &__item {
+>>>>>>> Stashed changes
+  }
+
+  &__link {
+  }
+}
+<<<<<<< Updated upstream
+.parent {
+  margin: 0 20px 0 0;
+}
+.sub-sub-menu {
+  &__list {
+    top: 0;
+    left: 100%;
+    padding: 0 0 0 5px;
+=======
+
+.sub-sub-menu {
+  &__list {
+>>>>>>> Stashed changes
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+<<<<<<< Updated upstream
+// End MENU //////////////////////////////////////////
+
+=======
+>>>>>>> Stashed changes
+.contacts-header,
+.contacts {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: $brand;
+    margin: 20px;
+  }
+  &__adress,
+  &__adress-list {
+    display: flex;
+  }
+  &__adress-item {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  &__adress-item_bold {
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    max-width: 300px;
+    position: relative;
+  }
+  &__info-link {
+    color: $brand;
+    position: relative;
+    padding-left: 24px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: right;
+    &_phone {
+      font-family: $brand-font;
+      text-align: justify;
+      white-space: nowrap;
+      font-size: 22px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 4px;
+        width: 18px;
+        height: 18px;
+        background-image: url(../bem_components/icon/__phone.svg);
+      }
+    }
+  }
+}
