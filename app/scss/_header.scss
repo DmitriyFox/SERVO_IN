@@ -20,7 +20,6 @@
   white-space: nowrap;
   text-transform: uppercase;
   z-index: 1;
-
   & li {
     position: relative;
   }
@@ -76,8 +75,6 @@
       transition: $transition;
     }
   }
-  &__arrow {
-  }
 }
 $arrow: 4px;
 .arrow {
@@ -86,7 +83,6 @@ $arrow: 4px;
   right: 18px;
   width: 0;
   height: 0;
-
   border-top: $arrow solid $brand;
   border-right: $arrow solid transparent;
   border-left: $arrow solid transparent;
@@ -95,8 +91,8 @@ $arrow: 4px;
 .sub-menu,
 .sub-sub-menu {
   &__list {
-    display: none;
     position: absolute;
+    display: none;
     opacity: 0;
     transition: ease opacity 0.3s;
     transition-delay: 0.1s;
@@ -125,7 +121,6 @@ $arrow: 4px;
     border-top: $arrow solid transparent;
     border-bottom: $arrow solid transparent;
   }
-
   &__item {
     &:hover .sub-sub-menu__list {
       display: block;
@@ -143,6 +138,7 @@ $arrow: 4px;
 .parent {
   margin: 0 20px 0 0;
 }
+
 .sub-sub-menu {
   &__list {
     display: none;
@@ -153,11 +149,6 @@ $arrow: 4px;
     min-width: 300px;
     padding: 0 0 0 5px;
     background-color: rgba(255, 255, 255, 0.8);
-  }
-
-  &__item {
-  }
-  &__link {
   }
 }
 // End MENU //////////////////////////////////////////
@@ -201,11 +192,8 @@ $arrow: 4px;
       font-family: $brand-font;
       text-align: justify;
     }
-    &__link {
-    }
   }
 }
-// End MENU //////////////////////////////////////////
 
 .contacts-header,
 .contacts {

@@ -2,8 +2,10 @@
   &__section {
     margin-top: 40px;
   }
-
   &__title {
+  }
+  &__img_blure {
+    filter: blur(10px);
   }
 }
 

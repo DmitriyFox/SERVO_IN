@@ -1,0 +1,94 @@
+.advertising {
+  &__title {
+    @extend %title;
+    margin-bottom: 40px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__promo {
+    border-radius: $border-radius;
+    overflow: hidden;
+    position: relative;
+  }
+  &__promo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__promo-btn {
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+    color: $brand;
+    font-size: 24px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 560px;
+    padding: 19px 32px 28px;
+    background-color: #fff;
+    border-radius: $border-radius;
+  }
+  &__info-title {
+    font-family: $brand-font;
+    font-size: 28px;
+    font-weight: normal;
+  }
+  &__info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__info-item {
+    display: flex;
+    min-height: 80px;
+    margin-top: 18px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.16);
+  }
+  &__info-link {
+    color: $grey-middle;
+  }
+  &__info-img {
+    width: 124px;
+    min-height: 100%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__info-subtitle {
+    padding: 10px 4px 4px 0;
+    font-family: $brand-font;
+    color: $grey-middle;
+  }
+  &__info-text {
+    font-size: 12px;
+    line-height: 120%;
+    color: $grey-middle;
+  }
+  &__popup {
+    display: flex;
+    height: 80px;
+  }
+  &__popup-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    width: 124px;
+    margin-right: 20px;
+    background-image: url(../img/content/add/info-img-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  &__popup-imgbtn {
+    float: left;
+  }
+}
