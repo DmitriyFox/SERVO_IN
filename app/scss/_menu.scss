@@ -38,7 +38,7 @@ $arrow: 4px;
       color: $brand;
       border: solid 2px $brand;
       border-radius: 40px 0 40px 40px;
-      // opacity: 0;
+      opacity: 0;
     }
     &:hover.menu__link::after {
       opacity: 1;
@@ -67,7 +67,6 @@ $arrow: 4px;
   &__list {
     position: absolute;
     display: none;
-    opacity: 0;
     transition: ease opacity 0.3s;
     transition-delay: 0.1s;
   }
@@ -116,8 +115,6 @@ $arrow: 4px;
     position: absolute;
     top: 0;
     left: 100%;
-    min-width: 100%;
-    min-width: 300px;
     padding: 0 0 0 5px;
   }
 }
