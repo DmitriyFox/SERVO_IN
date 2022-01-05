@@ -64,11 +64,12 @@
     &_phone {
       font-family: $brand-font;
       font-weight: 700;
-      padding-left: 18px;
+      padding-left: 20px;
+      position: relative;
       &::before {
         content: "";
         position: absolute;
-        left: 20px;
+        left: 0px;
         top: 4px;
         width: 18px;
         height: 18px;
