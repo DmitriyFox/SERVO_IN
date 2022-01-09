@@ -16,7 +16,8 @@ $arrow: 4px;
     margin: 0px 30px 0px 0;
     transition: all $transition;
     &:hover .sub-menu__list {
-      display: block;
+      visibility: visible;
+      // display: block;
       opacity: 1;
     }
   }
@@ -66,9 +67,12 @@ $arrow: 4px;
 .sub-sub-menu {
   &__list {
     position: absolute;
-    display: none;
-    transition: ease opacity 0.3s;
-    transition-delay: 0.1s;
+    visibility: hidden;
+    opacity: 0;
+    // display: none;
+    transition-property: visibility, opacity;
+    transition-duration: 0.3s;
+    transition-delay: 0.15s;
   }
   &__item {
     background-color: rgba(255, 255, 255, 0.85);
@@ -97,7 +101,8 @@ $arrow: 4px;
   }
   &__item {
     &:hover .sub-sub-menu__list {
-      display: block;
+      // display: block;
+      visibility: visible;
       opacity: 1;
     }
   }
@@ -111,7 +116,9 @@ $arrow: 4px;
 
 .sub-sub-menu {
   &__list {
-    display: none;
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 100%;
