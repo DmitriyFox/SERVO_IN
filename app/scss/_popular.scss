@@ -9,18 +9,19 @@
   }
   &__list {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
   }
   &__link {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: calc(25% - 18px);
+    max-width: calc(25% - 20px);
     min-width: 200px;
     min-height: 360px;
-    margin: 0 10px;
+    margin: 0 10px 20px;
     padding: 40px 20px;
     line-height: 130%;
     border-radius: $border-radius;

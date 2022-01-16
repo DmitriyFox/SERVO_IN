@@ -31,14 +31,17 @@
   border-radius: var(--border-radius);
 }
 .guides__promo {
-  background-image: url(../../img/content/add/promo.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-family: var(--brand-font);
   padding-top: 70px;
   padding-left: 40px;
   padding-right: 260px;
+
+  background-color: $brand;
+  background-image: url(./../img/content/add/promo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: var(--brand-font);
   color: #fff;
 }
 .guides__promo-label {
@@ -71,6 +74,8 @@
 .guides__promo-link {
   padding: 8px 40px;
   border-radius: 26px;
+  border: 2px solid #0072da;
+
   font-size: 24px;
   font-weight: bold;
   line-height: 29px;
@@ -78,8 +83,8 @@
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--brand-color);
+
   background: #ffffff;
-  border: 2px solid #0072da;
   cursor: pointer;
 }
 
@@ -184,7 +189,7 @@
   &__title {
   }
   &__popup {
-    background-image: url(../img/content/add/info-img-2.jpg);
+    background-image: url(../img/content/add/promo.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;

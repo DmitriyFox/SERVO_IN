@@ -6,18 +6,20 @@
 .button-link_stoke {
   display: inline-block;
   padding: 0px 24px;
-  min-height: 46px;
+  height: 46px;
   border-radius: 26px;
+
   line-height: 46px;
-  cursor: pointer;
   background: $brand;
-  color: #fff;
   font-family: $brand-font;
   font-weight: bold;
   letter-spacing: 0.07rem;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
+  color: #fff;
+
+  cursor: pointer;
   box-shadow: $box-shadow;
   transition: $transition;
   // background: linear-gradient(#0072da, #005098);

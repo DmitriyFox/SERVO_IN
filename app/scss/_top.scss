@@ -1,6 +1,8 @@
 .top {
   &__main {
     margin-top: 40px;
+  background: url(../img/header/header-bg_1400.png) no-repeat top center;
+
   }
   &__inner {
     position: relative;
@@ -10,6 +12,8 @@
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: $border-radius;
+    height: 444px;
+    overflow: hidden;
   }
   &__slider-inner {
     display: flex;
