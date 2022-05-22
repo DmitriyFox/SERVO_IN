@@ -4,15 +4,18 @@
 
 body {
     display: grid;
-    grid-template-columns: min-content;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
 }
 
 .error-404 {
-    margin: 0 auto;
-    max-width: 30%;
+    order: 0 1;
+    margin: auto;
+    background-color: gray;
 }
 
 .dog-svg {
-    width: 100%;
-    object-fit: contain;
+    fill: rgb(36, 36, 36);
+    background-color: aquamarine;
 }
