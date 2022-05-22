@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: min-content;
+}
+
+.404-dog-svg {
+    margin: 0 auto;
+    max-width: 50%;
+}

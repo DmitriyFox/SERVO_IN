@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: min-content;
+}
+
+.error-404 {
+    margin: 0 auto;
+    max-width: 30%;
+}
+
+.dog-svg {
+    width: 100%;
+    object-fit: contain;
+}
